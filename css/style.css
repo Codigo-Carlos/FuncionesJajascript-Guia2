@@ -3,6 +3,7 @@
     text-align: center;
     border-radius: 8px;
     background: darkgray;
+    box-shadow: 1px 1px 5PX;
 }
 .todo {
     display: grid;
@@ -15,13 +16,25 @@
     padding: 10px;
     background: lightgreen;
     border-radius: 15px;
+    box-shadow: 1px 1px 5PX;
 }
-.caja1 p {
+.caja2 {
+    margin: 10px;
+    padding: 10px;
+    background: lightblue;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5PX;
+}
+h1 {
+    color: white;   
+}
+
+p {
     color: white;
     font-size: 30px;
     margin: 20px;
 }
-.caja1 input{
+input{
     border-radius: 8px;
     border: none;
     width: 99%;
@@ -29,7 +42,7 @@
     font-size: 30px;
     background: lightcyan;
 }
-.caja1 select{
+select{
     border-radius: 8px;
     border: none;
     width: 99%;
@@ -37,7 +50,7 @@
     font-size: 30px;
     background: lightcyan;
 }
-.caja1 button {
+button {
     border-radius: 8px;
     border: none;
     width: 99%;
@@ -45,6 +58,7 @@
     font-size: 30px;
     background: lightcyan;
 }
+
 .rad {
     display: flex;
     flex-direction: row;
