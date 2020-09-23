@@ -1,0 +1,70 @@
+.cabeza{
+    margin: 10px 50px 10px 50px;
+    text-align: center;
+    border-radius: 8px;
+    background: darkgray;
+}
+.todo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: mintcream;
+    padding: 0px 40px 40px 40px;
+}
+.caja1 {
+    margin: 10px;
+    padding: 10px;
+    background: lightgreen;
+    border-radius: 15px;
+}
+.caja1 p {
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+}
+.caja1 input{
+    border-radius: 8px;
+    border: none;
+    width: 99%;
+    height: 50px;
+    font-size: 30px;
+    background: lightcyan;
+}
+.caja1 select{
+    border-radius: 8px;
+    border: none;
+    width: 99%;
+    height: 50px;
+    font-size: 30px;
+    background: lightcyan;
+}
+.caja1 button {
+    border-radius: 8px;
+    border: none;
+    width: 99%;
+    height: 50px;
+    font-size: 30px;
+    background: lightcyan;
+}
+.rad {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+}
+.rad input {
+    margin: 0px 5px 0px 20px;
+    width: 8%;
+    height: 50px;   
+
+}
+.rad p {
+    color: white;
+    font-size: 30px;
+}
+.caja {
+    margin: 10px;
+    padding: 10px;
+    background: lightblue;
+    border-radius: 15px;
+    
+}
