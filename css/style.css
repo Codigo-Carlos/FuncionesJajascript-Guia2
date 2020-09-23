@@ -8,8 +8,9 @@
 .todo {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
     background: mintcream;
-    padding: 0px 40px 40px 40px;
+    padding: 0px 40px 0px 40px;
 }
 .caja1 {
     margin: 10px;
@@ -22,6 +23,21 @@
     margin: 10px;
     padding: 10px;
     background: lightblue;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5PX;
+}
+
+.caja3 {
+    margin: 10px;
+    padding: 10px;
+    background: lightgray;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5PX;
+}
+.caja4 {
+    margin: 10px;
+    padding: 10px;
+    background: lightseagreen;
     border-radius: 15px;
     box-shadow: 1px 1px 5PX;
 }
@@ -67,7 +83,7 @@ button {
 }
 .rad input {
     margin: 0px 5px 0px 20px;
-    width: 8%;
+    width: 10%;
     height: 50px;   
 
 }
@@ -80,5 +96,29 @@ button {
     padding: 10px;
     background: lightblue;
     border-radius: 15px;
+    
+}
+@media screen and (max-width:900px ) {
+
+    .todo {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: mintcream;
+        padding: 10px 40px 10px 40px;
+    }
+    input{
+        border-radius: 8px;
+        border: none;
+        width: 99%;
+        height: 50px;
+        font-size: 20px;
+        background: lightcyan;
+    }
+    .rad input {
+        padding: 0px 0px 0px 0px;
+        width: auto;
+        height: 50px;   
+        
+    }
     
 }

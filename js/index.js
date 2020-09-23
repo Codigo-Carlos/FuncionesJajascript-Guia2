@@ -1,5 +1,6 @@
 var boton1 = document.getElementById("BTN1");
 var boton2 = document.getElementById("BTN2");
+var boton4 = document.getElementById("BTN3");
 
 
 
@@ -67,5 +68,50 @@ boton2.addEventListener("click", function (){
         }
         
     }
+    
+})
+boton4.addEventListener("click", function (){
+    var caja4 = document.getElementById("C4")
+    var nota1 = document.getElementById("NOA3");
+    var nota2 = document.getElementById("NOB3");
+    var nota3 = document.getElementById("NOC3");
+    var respuesta = document.getElementById("RES3");
+    var prom = 0, error = "";
+
+    if (isNaN(parseInt(nota1.value))) {
+        error += "El nota 1 debe ser en numeros";
+    } else {
+        if (parseInt(nota1.value) >= 1 && parseInt(nota1.value) <= 7) {
+        } else {
+            error += "La nota 1 debe ser entre 1 y 7";
+        }
+    }
+    if (isNaN(parseInt(nota2.value))) {
+        error += "<br>El nota 2 debe ser en numeros";
+    } else {
+        if (parseInt(nota2.value) >= 1 && parseInt(nota2.value) <= 7) {
+        } else {
+            error += "<br>La nota 2 debe ser entre 1 y 7";
+        }
+    }
+    if (isNaN(parseInt(nota3.value))) {
+        error += "<br>El nota 3 debe  ser en numeros";
+    } else {
+        if (parseInt(nota3.value) >= 1 && parseInt(nota3.value) <= 7) {
+        } else {
+            error += "<br>La nota 3 debe ser entre 1 y 7";
+        }
+    }
+    if (error == ""){
+        caja4.style.backgroundColor = "lightseagreen";
+        var tot = parseFloat(nota1.value) + parseFloat(nota2.value) + parseFloat(nota3.value)
+        var prom = tot/3;
+        respuesta.innerHTML = "El promedio es "+ prom;
+    } else {
+        caja4.style.backgroundColor = "lightcoral";
+        respuesta.innerHTML = error;
+    }
+    
+    
     
 })
